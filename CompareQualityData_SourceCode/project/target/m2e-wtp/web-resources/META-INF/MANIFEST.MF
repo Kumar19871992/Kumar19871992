@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: CompareQualityData
+Implementation-Copyright: Copyright © 2020 by DST Business Process So
+ lutions Ltd. All rights reserved.
+Implementation-Trademark: 'AWD' is a registered trademark of DST Techn
+ ologies, Inc.
+Implementation-Version: 1.3.0-SNAPSHOT
+Built-By: dt204486
+Specification-Title: CompareQualityData
+Implementation-Vendor-Id: com.dstawd.custom
+Build-Jdk: 1.8.0_261
+Specification-Version: 1.3
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: DST Business Process Solutions Ltd
+
