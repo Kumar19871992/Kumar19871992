@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://model.stocktransfer.ssnc.com" targetNamespace="http://model.stocktransfer.ssnc.com"
+	elementFormDefault="qualified">
+
+	<xs:element name="getAgentRequest">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="nameAddres" nillable="false" type="xs:string" />
+			
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getAgentResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="agentNumber" nillable="true" type="xs:string" />
+				<xs:element name="name" nillable="true" type="xs:string" />
+				<xs:element name="postalCode" nillable="true" type="xs:string" />
+				<xs:element name="type" nillable="true" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://units.model.stocktransfer.ssnc.com" targetNamespace="http://units.model.stocktransfer.ssnc.com"
+	elementFormDefault="qualified">
+
+	<xs:element name="getUnitsRequest">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="figure" nillable="false" type="xs:string" />
+			
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getUnitsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="amount" nillable="true" type="xs:string" />
+				<xs:element name="g1" nillable="true" type="xs:string" />
+				<xs:element name="g2" nillable="true" type="xs:string" />
+				<xs:element name="typeprocessing" nillable="true" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

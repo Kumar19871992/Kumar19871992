@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://model.awdqcboost.ssnc.com" targetNamespace="http://model.awdqcboost.ssnc.com"
+	elementFormDefault="qualified">
+
+	<xs:element name="getNameAccountRequest">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="nameAddress" nillable="false" type="xs:string" />
+			
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getNameAccountResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="accountNumber" nillable="true" type="xs:string" />
+				<xs:element name="name" nillable="true" type="xs:string" />
+				<xs:element name="postalCode" nillable="true" type="xs:string" />
+				<xs:element name="type" nillable="true" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

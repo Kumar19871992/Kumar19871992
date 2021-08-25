@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://model.awdqcboost.ssnc.com" targetNamespace="http://model.awdqcboost.ssnc.com"
+	elementFormDefault="qualified">
+
+	<xs:element name="qcBoostRequest">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="lob_call" nillable="true" type="xs:string" />
+			<xs:element name="lob_amtv" nillable="true" type="xs:string" />
+			<xs:element name="lob_fund" nillable="true" type="xs:string" />
+			<xs:element name="lob_vext" nillable="true" type="xs:string" />
+			<xs:element name="lob_deal" nillable="true" type="xs:string" />
+			<xs:element name="lob_disc" nillable="true" type="xs:string" />
+			<xs:element name="unitcd" nillable="true" type="xs:string" />
+			<xs:element name="queuecd" nillable="true" type="xs:string" />
+			<xs:element name="lob_tapr" nillable="true" type="xs:string" />
+			<xs:element name="groupcd" nillable="true" type="xs:string" />
+			<xs:element name="categorycd" nillable="true" type="xs:string" />
+			<xs:element name="userid" nillable="true" type="xs:string" />
+			<xs:element name="wrktype" nillable="true" type="xs:string" />
+			<xs:element name="lob_ltty" nillable="true" type="xs:string" />
+			<xs:element name="duration_max" nillable="true" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="qcBoostResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="response" nillable="true" type="xs:string" />
+				<xs:element name="error" nillable="true" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
